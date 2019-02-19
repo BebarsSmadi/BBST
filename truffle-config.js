@@ -99,8 +99,16 @@ module.exports = {
 }
 networks: {
   development: {
-    host: "127.0.0.1",
+    host: "127.0.0.1"
     port: "5777"
+    require('babel-register')
     network_id: "*" // match any network id 
+    "babel-polyfill";"^6.23.0",
+    "babel-preset-es2015"; "^6.18.0",
+    "babel-preset-stage-2"; "^6.18.0",
+    "babel-preset-stage-3"; "^6.17.0",
+    "babel-register"; "^6.23.0",
+    "babel-preset-env"; "^1.1.8";
   }
+  
 }
